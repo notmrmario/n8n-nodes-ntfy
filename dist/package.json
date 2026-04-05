@@ -1,6 +1,6 @@
 {
     "name": "@notmrmario/n8n-nodes-ntfy",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Unofficial ntfy n8n node",
     "license": "MIT",
     "homepage": "",
