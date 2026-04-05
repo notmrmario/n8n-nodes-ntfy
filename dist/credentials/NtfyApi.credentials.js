@@ -4,7 +4,9 @@ exports.NtfyApi = void 0;
 class NtfyApi {
     constructor() {
         this.name = 'ntfyApi';
-        this.displayName = 'ntfy API';
+        this.displayName = 'Ntfy API';
+        this.documentationUrl = 'https://docs.ntfy.sh';
+        this.icon = "file:../nodes/Ntfy/ntfy.svg";
         this.properties = [
             {
                 displayName: 'Authentication',

@@ -1,8 +1,10 @@
-import { ICredentialType, INodeProperties } from "n8n-workflow";
+import { Icon, ICredentialTestRequest, ICredentialType, INodeProperties } from "n8n-workflow";
 
 export class NtfyApi implements ICredentialType {
     name = 'ntfyApi';
-    displayName = 'ntfy API';
+    displayName = 'Ntfy API';
+    documentationUrl = 'https://docs.ntfy.sh';
+    icon: Icon = "file:../nodes/Ntfy/ntfy.svg";
     properties: INodeProperties[] = [
         {
             displayName: 'Authentication',
@@ -41,4 +43,5 @@ export class NtfyApi implements ICredentialType {
             displayOptions: { show: { authType: ['token'] } },
         },
     ];
+    test?: ICredentialTestRequest | undefined;
 }
