@@ -17,7 +17,12 @@ export class NtfyApi implements ICredentialType {
             ],
             default: 'none',
         },
-        // Campos para basic auth
+        {
+            displayName: "Server URL",
+            name: "serverUrl",
+            type: "string",
+            default: "https://ntfy.sh"
+        },
         {
             displayName: 'Username',
             name: 'username',
@@ -33,7 +38,6 @@ export class NtfyApi implements ICredentialType {
             default: '',
             displayOptions: { show: { authType: ['basic'] } },
         },
-        // Campo para token
         {
             displayName: 'Access Token',
             name: 'token',
